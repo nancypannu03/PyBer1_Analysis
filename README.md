@@ -134,11 +134,11 @@ In the cell below, write a few sentences to describe any discoveries you made wh
 
 #### Write a few sentences to describe any discoveries that you made while performing your analysis. 
 
--From the analysis we can depict that the public schools have more average school budget than the charter schools. The average reading scores of both the schools (public and charter ) are more than the average math scores.
+ -From the analysis we can depict that the public schools have more average school budget than the charter schools. The average reading scores of both the schools (public and charter ) are more than the average math scores.
 
--By using the groupby, count, and sort_values functions we can conclude that Montgomery High School has the highest number of students followed by Green High School.
+ -By using the groupby, count, and sort_values functions we can conclude that Montgomery High School has the highest number of students followed by Green High School.
 
--By using the 'groupby' , 'mean' functions we can deduce that the average math scores for the charter schools(of grade 9 t0 12) is more than the public schools.
+ -By using the 'groupby' , 'mean' functions we can deduce that the average math scores for the charter schools(of grade 9 t0 12) is more than the public schools.
 
 #### Include any additional analysis that you believe would be worthwhile.
 
