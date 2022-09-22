@@ -59,13 +59,6 @@ student_df['grade'] = student_df['grade'].astype(int)
 student_df.dtypes
 
 ### Deliverable 3: Summarize the Data
-Describe the data using summary statistics on the data as a whole and on individual columns.
-
-Generate the summary statistics for each DataFrame by using the describe function.
-
-Display the mean math score using the mean function.
-
-Store the minimum reading score as min_reading_score.
 
 #### Display summary statistics for the DataFrame
 student_df.describe()
