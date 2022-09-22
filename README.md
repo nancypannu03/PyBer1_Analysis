@@ -5,7 +5,7 @@
 
 [Student data CSV File](Resources/new_full_student_data.csv)
 
-[Student Data Challenger Code](Student_Data_Challenge_Starter_Code/Student_Data_Challenge_Starter_Code.ipynb) <br/>
+[Student Data Challenge Code](Student_Data_Challenge_Starter_Code/Student_Data_Challenge_Starter_Code.ipynb) <br/>
 
 ### Import required dependencies
  import pandas as pd
