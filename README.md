@@ -5,7 +5,6 @@
 
 ### Import required dependencies
  import pandas as pd
- 
  import os
 
 ### Deliverable 1: Collect the Data
