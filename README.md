@@ -4,15 +4,11 @@
 ## Student_Data_Challenge_Code
 
 ### Import required dependencies
-import pandas as pd
-import os
+ import pandas as pd
+ 
+ import os
 
 ### Deliverable 1: Collect the Data
-To collect the data that you’ll need, complete the following steps:
-
-Using the Pandas read_csv function and the os module, import the data from the new_full_student_data.csv file, and create a DataFrame called student_df.
-
-Use the head function to confirm that Pandas properly imported the data.
 
 #### Create the path and import the data
 full_student_data = os.path.join('../Resources/new_full_student_data.csv')
