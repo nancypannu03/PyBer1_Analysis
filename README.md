@@ -3,6 +3,8 @@
 - In this Project, we will assist Maria in performing certain Pandas functions with Python language to collect, clean and represent the data. We will be using functions of Pandas library such as groupby, isnull(), dropna(), duplicated(), etc, to clean and organize the data. And handover Maria a better representation of the given data.
 ## Student_Data_Challenge_Code
 
+[Student data CSV File](Resources/new_full_student_data.csv)
+
 [Student Data Challenger Code](Student_Data_Challenge_Starter_Code/Student_Data_Challenge_Starter_Code.ipynb) <br/>
 
 ### Import required dependencies
