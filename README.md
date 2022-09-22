@@ -3,20 +3,22 @@
 - In this Project, we will assist Maria in performing certain Pandas functions with Python language to collect, clean and represent the data. We will be using functions of Pandas library such as groupby, isnull(), dropna(), duplicated(), etc, to clean and organize the data. And handover Maria a better representation of the given data.
 ## Student_Data_Challenge_Code
 
-Import required dependencies
+### Import required dependencies
 import pandas as pd
 import os
-Deliverable 1: Collect the Data
+
+### Deliverable 1: Collect the Data
 To collect the data that you’ll need, complete the following steps:
 
 Using the Pandas read_csv function and the os module, import the data from the new_full_student_data.csv file, and create a DataFrame called student_df.
 
 Use the head function to confirm that Pandas properly imported the data.
 
-# Create the path and import the data
+#### Create the path and import the data
 full_student_data = os.path.join('../Resources/new_full_student_data.csv')
 student_df = pd.read_csv(full_student_data)
-# Verify that the data was properly imported
+
+#### Verify that the data was properly imported
 student_df.head()
 student_id	student_name	grade	school_name	reading_score	math_score	school_type	school_budget
 0	103880842	Travis Martin	9th	Sullivan High School	59.0	88.2	Public	961125
@@ -24,7 +26,8 @@ student_id	student_name	grade	school_name	reading_score	math_score	school_type	s
 2	45024902	Gabriela Lucero	9th	Wagner High School	89.0	70.4	Public	846745
 3	62582498	Susan Richardson	9th	Silva High School	69.7	80.3	Public	991918
 4	16437227	Sherry Davis	11th	Bowers High School	NaN	27.5	Public	848324
-Deliverable 2: Prepare the Data
+
+### Deliverable 2: Prepare the Data
 To prepare and clean your data for analysis, complete the following steps:
 
 Check for and remove all rows with NaN, or missing, values in the student DataFrame.
