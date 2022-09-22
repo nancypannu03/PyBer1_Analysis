@@ -94,16 +94,16 @@ min_reading_row = student_df.loc[student_df["reading_score"] == min_reading_scor
 min_reading_row
 ​
 
-# Use loc with conditionals to select all reading scores from 10th graders at Dixon High School.
+#### Use loc with conditionals to select all reading scores from 10th graders at Dixon High School.
 ​
 student_df_grade10 = student_df.loc[(student_df["grade"] == 10) & (student_df["school_name"] == "Dixon High School"),'school_name':'reading_score']
 student_df_grade10
 ​
-# Find the mean reading score for all students in grades 11 and 12 combined.
+#### Find the mean reading score for all students in grades 11 and 12 combined.
 student_df['reading_score'].loc[(student_df['grade'] == 11) | (student_df['grade'] == 12)].mean() 
 ​
 74.90038089192188
-# Find the mean math score for all students in grades 11 and 12 combined.
+#### Find the mean math score for all students in grades 11 and 12 combined.
 student_df['math_score'].loc[(student_df['grade'] == 11) | (student_df['grade'] == 12)].mean()
 ​
 63.25853039200117
@@ -114,11 +114,11 @@ student_df['math_score'].loc[(student_df['grade'] == 11) | (student_df['grade'] 
 student_group_df = student_df.groupby("school_type").mean()
 student_group_df.loc[: , ["school_budget"]]
 ​
-#avg_student_scores_by_grade = student_df.groupby("school_type").mean()
-#avg_student_scores_by_grade.loc[:, ["math_score", "reading_score"]] 
+avg_student_scores_by_grade = student_df.groupby("school_type").mean()
+avg_student_scores_by_grade.loc[:, ["math_score", "reading_score"]] 
 
-# Use the `groupby`, `count`, and `sort_values` functions to find the
-# total number of students at each school and sort from most students to least students.
+#### Use the `groupby`, `count`, and `sort_values` functions to find the
+#### total number of students at each school and sort from most students to least students.
 ​
 student_count_df = student_df.rename(columns={'student_name':'student_count'})
 student_count_by_school_df = student_count_df.groupby("school_name").count()
@@ -130,14 +130,10 @@ student_avg_df = student_df.groupby(["school_type","grade"]).mean().round()
 student_avg_df.loc[:,["math_score"]]
 ​
 ### Deliverable 6: Summarize Your Findings
-In the cell below, write a few sentences to describe any discoveries you made while performing your analysis along with any additional analysis you believe would be worthwhile.
-
 #### Write a few sentences to describe any discoveries that you made while performing your analysis. 
 
  -From the analysis we can depict that the public schools have more average school budget than the charter schools. The average reading scores of both the schools (public and charter ) are more than the average math scores.
-
- -By using the groupby, count, and sort_values functions we can conclude that Montgomery High School has the highest number of students followed by Green High School.
-
+ -By using the groupby, count, and sort_values functions we can conclude that Montgomery High School has the highest number of students followed by Green High         School.
  -By using the 'groupby' , 'mean' functions we can deduce that the average math scores for the charter schools(of grade 9 t0 12) is more than the public schools.
 
 #### Include any additional analysis that you believe would be worthwhile.
