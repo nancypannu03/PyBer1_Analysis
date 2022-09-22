@@ -5,60 +5,31 @@
 
 ### Import required dependencies
  import pandas as pd
+ 
  import os
 
 ### Deliverable 1: Collect the Data
 
 #### Create the path and import the data
 full_student_data = os.path.join('../Resources/new_full_student_data.csv')
+
 student_df = pd.read_csv(full_student_data)
 
 #### Verify that the data was properly imported
 student_df.head()
-student_id	student_name	grade	school_name	reading_score	math_score	school_type	school_budget
-0	103880842	Travis Martin	9th	Sullivan High School	59.0	88.2	Public	961125
-1	45069750	Michael Brown	9th	Dixon High School	94.7	73.5	Charter	870334
-2	45024902	Gabriela Lucero	9th	Wagner High School	89.0	70.4	Public	846745
-3	62582498	Susan Richardson	9th	Silva High School	69.7	80.3	Public	991918
-4	16437227	Sherry Davis	11th	Bowers High School	NaN	27.5	Public	848324
 
 ### Deliverable 2: Prepare the Data
-To prepare and clean your data for analysis, complete the following steps:
-
-Check for and remove all rows with NaN, or missing, values in the student DataFrame.
-
-Check for and remove all duplicate rows in the student DataFrame.
-
-Use the str.replace function to remove the "th" from the grade levels in the grade column.
-
-Check data types using the dtypes property.
-
-Remove the "th" suffix from every value in the grade column using str and replace.
-
-Change the grade colum to the int type and verify column types.
-
-Use the head (and/or the tail) function to preview the DataFrame.
 
 # Check for null values
 student_df.isnull()
-student_id	student_name	grade	school_name	reading_score	math_score	school_type	school_budget
-0	False	False	False	False	False	False	False	False
-1	False	False	False	False	False	False	False	False
-2	False	False	False	False	False	False	False	False
-3	False	False	False	False	False	False	False	False
-4	False	False	False	False	True	False	False	False
-...	...	...	...	...	...	...	...	...
-19509	False	False	False	False	False	False	False	False
-19510	False	False	False	False	False	False	False	False
-19511	False	False	False	False	False	False	False	False
-19512	False	False	False	False	False	False	False	False
-19513	False	False	False	False	False	False	False	False
-19514 rows × 8 columns
 
 # Drop rows with null values and verify removal
 student_df.isnull().sum()
+
 student_df=student_df.dropna()
+
 student_df.isnull().sum()
+
 student_id       0
 student_name     0
 grade            0
